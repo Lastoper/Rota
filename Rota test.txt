@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Rotation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #calendar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #tasks {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #specialists {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        select {
+            padding: 10px;
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="specialists">
+        <h3>Specialists</h3>
+        <ul>
+            <li>Dr. Smith</li>
+            <li>Dr. Doe</li>
+            <li>Dr. Brown</li>
+            <li>Dr. Wilson</li>
+        </ul>
+    </div>
+    <div id="calendar">
+        <h2>Today's Date: <span id="dateDisplay"></span></h2>
+    </div>
+    <div id="tasks">
+        <label for="taskSelect">Select Task:</label>
+        <select id="taskSelect">
+            <option value="Task 1">Task 1</option>
+            <option value="Task 2">Task 2</option>
+            <option value="Task 3">Task 3</option>
+        </select>
+    </div>
+    <script>
+        document.getElementById('dateDisplay').textContent = new Date().toLocaleDateString();
+
+        // Functionality for tasks dropdown or other interactions can be added here
+    </script>
+</body>
+</html>
